@@ -1,19 +1,21 @@
 <?php
 /**
- * Plugin Name: WooCommerce Shipping Method Column
+ * Plugin Name: Shipping Method Column for WooCommerce
  * Plugin URI: https://sonicpixel.ca
  * Description: Adds a shipping method column to the WooCommerce orders list page.
  * Version: 1.0.0
  * Author: Mike Sewell
- * License: GPL v2 or later
+ * License: GPLv2 or later
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Requires at least: 5.0
  * Tested up to: 6.3
  * WC requires at least: 5.0
  * WC tested up to: 8.0
  * Requires PHP: 7.0
+ * Text Domain: shipping-method-column-for-woocommerce
  *
  * @category Admin
- * @package  WooCommerce_Shipping_Method_Column
+ * @package  Shipping_Method_Column_For_WooCommerce
  * @author   Mike Sewell <mike@sonicpixel.ca>
  * @license  https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
  * @link     https://sonicpixel.ca
@@ -49,7 +51,7 @@ function wcsmc_add_shipping_method_column( $columns )
 
         // Add shipping method column after the order status column.
         if ('order_status' === $column_name ) {
-            $new_columns['shipping_method'] = __('Shipping Method', 'woocommerce');
+            $new_columns['shipping_method'] = __('Shipping Method', 'shipping-method-column-for-woocommerce');
         }
     }
 
@@ -82,7 +84,7 @@ function wcsmc_show_shipping_method_content( $column, $post_id )
                 echo esc_html(implode(', ', $shipping_methods));
             } else {
                 echo '<span style="color: #999;">' .
-                __('No shipping', 'woocommerce') . '</span>';
+                __('No shipping', 'shipping-method-column-for-woocommerce') . '</span>';
             }
         }
     }
