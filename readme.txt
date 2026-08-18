@@ -1,5 +1,5 @@
 === Shipping Method Column for WooCommerce ===
-Contributors: mikesewell
+Contributors: maikunari
 Tags: woocommerce, shipping, orders, admin, column
 Requires at least: 5.0
 Tested up to: 7.0
