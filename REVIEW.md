@@ -1,5 +1,7 @@
 # Review: wordpress.org submission prep (branch arjuna/shipping-method-column-org-rename-readme)
 
+> **Fix status (2026-08-18, follow-up commit):** at the human's request, all MUST-FIX and SHOULD-FIX findings below have been applied. Findings 1–7: fixed. `Tested up to` was bumped to 7.0 and `WC tested up to` to 11.0 based on the live wordpress.org APIs (WordPress 7.0.4 / WooCommerce 11.0.1 current as of today) — a human should still smoke-test on those versions since this machine cannot run WordPress. The "NEEDS THE HUMAN" items (screenshots, wp.org username, local `php -l`/Plugin Check) remain open. Line numbers below refer to the pre-fix code.
+
 Scope reviewed: commits `be6186c`..`e12744e` (file rename, Text Domain/License headers, string domains, readme rewrite) against the brief "prepare for first wordpress.org submission". Three independent review lenses (correctness, wp.org compliance, security/escaping) were run and consolidated; every finding below was verified against the working tree.
 
 ## Verdict on the previous agent's work

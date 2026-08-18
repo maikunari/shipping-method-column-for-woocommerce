@@ -2,7 +2,7 @@
 Contributors: mikesewell
 Tags: woocommerce, shipping, orders, admin, column
 Requires at least: 5.0
-Tested up to: 6.3
+Tested up to: 7.0
 Requires PHP: 7.0
 Stable tag: 1.0.0
 License: GPLv2 or later
@@ -18,7 +18,7 @@ The column is inserted after **Order Status**. For each order it lists the title
 
 The plugin has no settings screen. After activation, open WooCommerce → Orders to see the column.
 
-This version hooks the classic post-based orders list (`shop_order`). It does not register High-Performance Order Storage (HPOS) compatibility, so the column will not appear on the HPOS orders screen.
+The column appears on both the classic post-based orders list (`shop_order`) and the High-Performance Order Storage (HPOS) orders screen, and the plugin declares HPOS compatibility with WooCommerce.
 
 == Installation ==
 
@@ -49,7 +49,7 @@ Not in this version. The column is always added after Order Status.
 
 = Does it work with HPOS (High-Performance Order Storage)? =
 
-No. It only hooks the traditional `shop_order` posts list. HPOS support is not included.
+Yes. The column appears on the HPOS orders screen as well as the traditional `shop_order` posts list, and the plugin declares HPOS compatibility.
 
 = What does the column show when there are several shipping methods? =
 
@@ -69,7 +69,7 @@ The column shows "No shipping".
 
 = 1.0.0 =
 * Initial release.
-* Add a Shipping Method column to the classic WooCommerce orders list.
+* Add a Shipping Method column to the WooCommerce orders list (classic and HPOS).
 * Show one or more shipping method titles per order.
 * Show "No shipping" when an order has no shipping methods.
 * Basic admin CSS for the column width.
