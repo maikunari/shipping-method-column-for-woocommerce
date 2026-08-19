@@ -6,13 +6,13 @@
  * Version: 1.0.0
  * Author: Mike Sewell
  * Author URI: https://sonicpixel.io
- * License: GPLv2 or later
- * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Requires at least: 5.0
- * Tested up to: 7.0
- * WC requires at least: 5.0
- * WC tested up to: 11.0
- * Requires PHP: 7.0
+ * License:           GPLv2 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ * Requires at least: 6.0
+ * Tested up to: 7.0.4
+ * WC requires at least: 7.0
+ * WC tested up to:   11.0.1
+ * Requires PHP: 7.4
  * Requires Plugins: woocommerce
  * Text Domain: shipping-method-column-for-woocommerce
  *
