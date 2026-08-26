@@ -4,7 +4,7 @@
  * Plugin URI: https://sonicpixel.ca
  * Description: Adds a shipping method column to the WooCommerce orders list page.
  * Version: 1.0.0
- * Author: Mike Sewell
+ * Author: Sonic Pixel
  * Author URI: https://sonicpixel.io
  * License:           GPLv2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
